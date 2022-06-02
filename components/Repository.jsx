@@ -96,6 +96,7 @@ const Repository = ({
               fontSize: '.7rem',
               display: 'flex',
               justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
             Stars:&nbsp;{stars}
@@ -112,6 +113,7 @@ const Repository = ({
               fontSize: '.7rem',
               display: 'flex',
               justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
             Issues:&nbsp;{issues}
