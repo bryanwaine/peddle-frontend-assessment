@@ -24,7 +24,7 @@ npm run dev
 yarn dev
 ```
 
-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open [http://localhost:3000/comingsoon](http://localhost:3000/commingsoon) with your browser to see the result.
 
 - For the Github repositories page, open [http://localhost:3000/github](http://localhost:3000/github) with your browser to see the result.
 
