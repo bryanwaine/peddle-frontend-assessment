@@ -1,8 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Title
+Peddle Frontend Assessment
+
+## Overview
+This is a task to design  a landing page following a prototype UI using Next.js. The prototype can be viewed via this [link.](https://xd.adobe.com/view/b9ed8245-2809-4b31-a3c4-5c2e76ddb7e8-ecbe/?fullscreen)
+It also includes a route to a page showing the most starred Github repos created in the last 30 days (relative to 2022-06-01).
 
 ## Getting Started
 
-First, run the development server:
+- Clone this repository to your local machine.
+
+- Install the dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+- Run the development server:
 
 ```bash
 npm run dev
@@ -10,25 +24,22 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- For the Github repositories page, open [http://localhost:3000/github](http://localhost:3000/github) with your browser to see the result.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Libraries and Dependencies
+- [Next](https://nextjs.org)
+- [React](https://reactjs.org)
+- [Axios](https://axios-http.com)
+- [Emotion](https://emotion.sh)
+- [Material UI](https://mui.com/)
+- [Styled components](https://styled-components.com)
+- [React Hook Form](https://react-hook-form.com)
+- [Yup](https://www.npmjs.com/package/yup)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ToDo List
+- Optimize pages for mobile devices
+- Add form validation
+- Create backend and API route for collection of form data
+- Database integration to store collected form data

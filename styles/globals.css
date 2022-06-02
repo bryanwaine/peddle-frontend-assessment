@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins;
 }
 
 a {
@@ -13,4 +12,76 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: Poppins;
+}
+/* Contact Form animation */
+.contact {
+  -moz-backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  z-index: -1;
+  opacity: 0;
+  transition: 1.5s ease-in;
+}
+.contact.true {
+  -moz-backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(17px);
+  backdrop-filter: blur(17px);
+  opacity: 1;
+  z-index: 10000;
+}
+/* Input animation */
+.input {
+  position: absolute;
+  top: 6rem;
+  z-index: 0;
+  transform: none;
+  transition: 1.5s ease-in;
+}
+.input.true {
+  transform: translateY(-3.5rem);
+  z-index: 100;
+}
+/* Brown Globe animation */
+.brown120 {
+  transform: none;
+  transition: 1.5s ease-in;
+}
+.brown120.true {
+  transform: translate(3rem, -3rem);
+}
+/* Purple Globe animation */
+.purple100 {
+  transform: none;
+  transition: 1.5s ease-in;
+}
+.purple100.true {
+  transform: translate(0, -2rem);
+}
+/* Metricks Logo animation */
+.logo {
+  position: absolute;
+  top:15px;
+  left: 25px;
+  transform: none;
+  transition: 1.5s ease-in;
+}
+.logo.true {
+  transform: translate(2rem, 0);
+}
+/* About page load animation */
+.about {
+  opacity: 0;
+  transition: 1.5s ease-in;
+}
+.about.true {
+  opacity: 1;
+}
+/* Coming Soon page load animation */
+.comingSoon {
+  opacity: 0;
+  transition: 1.5s ease-in;
+}
+.comingSoon.true {
+  opacity: 1;
 }
