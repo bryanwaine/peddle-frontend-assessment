@@ -1,7 +1,8 @@
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import metricks from '../public/metricks.png';
 import Image from 'next/image';
+
+import metricks from '../public/metricks.png';
 
 export default function Home() {
 

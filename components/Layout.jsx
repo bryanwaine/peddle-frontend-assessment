@@ -11,6 +11,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { AppBar, Box, CssBaseline, Toolbar, Typography } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+
 import { theme } from '../components/Theme';
 
 const Layout = ({
@@ -34,6 +35,8 @@ const Layout = ({
       </Head>
       <CssBaseline>
         <ThemeProvider theme={theme}>
+
+          {/* HEADER */}
           <AppBar
             position='static'
             elevation={0}
@@ -116,6 +119,8 @@ const Layout = ({
               </Box>
             </Toolbar>
           </AppBar>
+
+          {/* BODY */}
           <Box
             sx={{
               minHeight: '38rem',
@@ -123,6 +128,8 @@ const Layout = ({
           >
             {children}
           </Box>
+
+          {/* FOOTER */}
           <AppBar
             position='static'
             elevation={0}
