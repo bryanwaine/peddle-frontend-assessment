@@ -19,7 +19,9 @@ const FetchRepos = (pageNumber) => {
       setHasMore(data.items.length > 0);
       setLoading(false);
     } catch (err) {
-      return console.error(err);
+      
+      setLoading(false);
+      return alert(err.message);
     }
   };
 

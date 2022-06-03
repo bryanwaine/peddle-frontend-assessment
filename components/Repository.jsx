@@ -12,6 +12,7 @@ const Repository = ({
   issues,
   created_at,
   login,
+  url
 }) => {
   const dateDifference = (date) => {
     const date1 = new Date(date);
@@ -69,9 +70,11 @@ const Repository = ({
           sx={{
             fontSize: '2rem',
             fontWeight: '600',
+            cursor: 'pointer',
           }}
         >
-          {name}
+          <a href={url} target="_blank" rel="noreferrer">{name}</a>
+          
         </Typography>
         <Typography
           variant='regular'

@@ -68,6 +68,7 @@ const Github = () => {
                     issues={repo.issues_count}
                     created_at={repo.created_at}
                     login={repo.owner.login}
+                    url={repo.html_url}
                   />
                 </ListItem>
               );
@@ -82,6 +83,7 @@ const Github = () => {
                     issues={repo.issues_count}
                     created_at={repo.created_at}
                     login={repo.owner.login}
+                    url={repo.html_url}
                   />
                 </ListItem>
               );
